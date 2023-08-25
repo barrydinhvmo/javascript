@@ -1,7 +1,7 @@
 const calcAverage = (roundScore1, roundScore2, roundScore3) =>
   (roundScore1 + roundScore2 + roundScore3) / 3;
 let scoreDolphins = calcAverage(44, 23, 71);
-let scoreKoalas = calcAverage(65, 54, 49);
+let scorieKoalas = calcAverage(65, 54, 49);
 
 function checkWinner(avgDolphins, avgKoalas) {
   if (avgDolphins / 2 >= avgKoalas) {
