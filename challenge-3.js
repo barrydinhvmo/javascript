@@ -1,3 +1,32 @@
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+john.calcBMI();
+mark.calcBMI();
+console.log(john.bmi, mark.bmi);
+console.log(
+  `${john.bmi > mark.bmi ? john.fullName : mark.fullName}'s BMI (${
+    john.bmi > mark.bmi ? john.bmi : mark.bmi
+  }) is higher than ${john.bmi < mark.bmi ? john.fullName : mark.fullName}'s (${
+    john.bmi < mark.bmi ? john.bmi : mark.bmi
+  })!`
+);
+
 // Let's go back to Mark and John comparing their BMIs!
 
 // This time, let's use objects to implement the calculations! Remember: BMI = mass / (height * height) (mass in kg and height in meters).
